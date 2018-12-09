@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using cardgame_rules_backend.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace cardgame_rules_backend.Controllers
@@ -12,9 +13,9 @@ namespace cardgame_rules_backend.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<int> Get()
         {
-            return new string[] { "value1", "value2" };
+            return WarRules.CompareCards(1, 2);
         }
 
         // GET api/values/5
