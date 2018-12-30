@@ -3,7 +3,6 @@ D:\Bootcamp\projects\cardgame_rules_backend\bin\Debug\netcoreapp2.1\cardgame_rul
 D:\Bootcamp\projects\cardgame_rules_backend\bin\Debug\netcoreapp2.1\cardgame_rules_backend.runtimeconfig.dev.json
 D:\Bootcamp\projects\cardgame_rules_backend\bin\Debug\netcoreapp2.1\cardgame_rules_backend.dll
 D:\Bootcamp\projects\cardgame_rules_backend\bin\Debug\netcoreapp2.1\cardgame_rules_backend.pdb
-D:\Bootcamp\projects\cardgame_rules_backend\obj\Debug\netcoreapp2.1\cardgame_rules_backend.csprojAssemblyReference.cache
 D:\Bootcamp\projects\cardgame_rules_backend\obj\Debug\netcoreapp2.1\cardgame_rules_backend.csproj.CoreCompileInputs.cache
 D:\Bootcamp\projects\cardgame_rules_backend\obj\Debug\netcoreapp2.1\cardgame_rules_backend.RazorAssemblyInfo.cache
 D:\Bootcamp\projects\cardgame_rules_backend\obj\Debug\netcoreapp2.1\cardgame_rules_backend.RazorAssemblyInfo.cs
@@ -12,3 +11,4 @@ D:\Bootcamp\projects\cardgame_rules_backend\obj\Debug\netcoreapp2.1\cardgame_rul
 D:\Bootcamp\projects\cardgame_rules_backend\obj\Debug\netcoreapp2.1\cardgame_rules_backend.RazorTargetAssemblyInfo.cache
 D:\Bootcamp\projects\cardgame_rules_backend\obj\Debug\netcoreapp2.1\cardgame_rules_backend.dll
 D:\Bootcamp\projects\cardgame_rules_backend\obj\Debug\netcoreapp2.1\cardgame_rules_backend.pdb
+D:\Bootcamp\projects\cardgame_rules_backend\obj\Debug\netcoreapp2.1\cardgame_rules_backend.csprojAssemblyReference.cache
