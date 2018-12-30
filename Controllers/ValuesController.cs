@@ -15,7 +15,7 @@ namespace cardgame_rules_backend.Controllers
         [HttpGet]
         public ActionResult<int> Get()
         {
-            return WarRules.CompareCards(1, 2);
+            return null;
         }
 
         // GET api/values/5

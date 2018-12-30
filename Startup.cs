@@ -10,11 +10,14 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace cardgame_rules_backend
 {
     public class Startup
     {
+        private const string title = "Our rules backend";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,6 +29,13 @@ namespace cardgame_rules_backend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddSwaggerGen(configuration => {
+                configuration.SwaggerDoc("v1", new Info
+                {
+                    Title = title,
+                    Version = "0.0.1"
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +51,14 @@ namespace cardgame_rules_backend
             }
 
             app.UseHttpsRedirection();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(configure =>
+            {
+                configure.SwaggerEndpoint("/swagger/v1/swagger.json", title);
+                configure.RoutePrefix = string.Empty;
+            });
+
             app.UseMvc();
         }
     }
