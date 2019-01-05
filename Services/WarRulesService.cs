@@ -25,9 +25,23 @@ namespace cardgame_rules_backend.Services
             //    return 0;
             //}
             //return 1;
+        
             var response = new CompareResult();
-            response.Reason = "test";
+            response.Reason = "Higher card";
+            if (firstCard.Number < secondCard.Number)
+                response.WinnerCard = secondCard;
+            else if (firstCard.Number > secondCard.Number)
+                response.WinnerCard = firstCard;
+            else
+            {
+                response.WinnerCard = null;
+                response.Reason = "Equality";
+            }
             return response;
+
+            //response.Reason = "test";
+            //response.WinnerCard = secondCard;
+            //return response;
         }
     }
 }
