@@ -24,12 +24,12 @@ namespace cardgame_rules_backend
                 return response;
             }
 
-            if (cards[0].Number == cards[1].Number)
-            {
-                var response = new CompareResult();
-                response.Error = "Need two different cards";
-                return response;
-            }
+            //if (cards[0].Number == cards[1].Number)
+            //{
+            //    var response = new CompareResult();
+            //    response.Error = "Need two different cards";
+            //    return response;
+            //}
             return WarRulesService.CompareCards(cards[0], cards[1]);
 
         }
