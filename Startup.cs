@@ -50,7 +50,7 @@ namespace cardgame_rules_backend
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseSwagger();
             app.UseSwaggerUI(configure =>
